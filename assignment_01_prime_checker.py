@@ -4,9 +4,8 @@
 # =============================================================================
 #
 # TASK: Prime Number Checker
-#
 # Write a Python program that checks whether a given number is prime.
-#
+
 # A prime number is a whole number greater than 1 that has no divisors
 # other than 1 and itself (e.g., 2, 3, 5, 7, 11, 13 ...).
 #
@@ -34,4 +33,13 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
-
+def check_prime(number):
+    if number<=1:
+        return False
+    for n in range(2,10):
+        if number != n:
+            if number % n==0:
+                return False
+    return True
+number=int(input("Enter your number: "))
+print(check_prime(number))

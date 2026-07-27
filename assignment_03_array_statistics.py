@@ -38,11 +38,42 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
-amount="How many numbers? "
-input(amount)
-def get_numbers(n):
-    while i<=n:
-        for i in range(0,n+1):
-          print("Enter number "+i)
-          i=i+1
+
+n=int(input("How many numbers? "))
+numbers=[]
+for i in range(1,n+1):
+        if i <= n:
+            number=int(input("Enter number" +str(i)+": "))
+            numbers.append(number)
+            i=i+1
+print("Results:")
+def the_sum(numbers):
+    sum=0
+    for number in numbers:
+        sum+= number
+    return sum
+def the_average(numbers):
+    return the_sum(numbers)/n
+def the_maximum(numbers):
+    maximum=numbers[0]
+    for num in numbers:
+        if num>maximum:
+            maximum=num
+    return maximum
+def the_minimum(numbers):
+    minimum=numbers[0]
+    for number in numbers:
+        if number<minimum:
+            minimum=number
+    return minimum
+print("Sum: "+str(the_sum(numbers)))
+print("Average: "+str(the_average(numbers)))
+print("Maximum: "+str(the_maximum(numbers)))
+print("Minimum: "+str(the_minimum(numbers)))
+
+
+
+
+
+
 

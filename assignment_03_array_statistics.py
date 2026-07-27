@@ -38,4 +38,11 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
+amount="How many numbers? "
+input(amount)
+def get_numbers(n):
+    while i<=n:
+        for i in range(0,n+1):
+          print("Enter number "+i)
+          i=i+1
 

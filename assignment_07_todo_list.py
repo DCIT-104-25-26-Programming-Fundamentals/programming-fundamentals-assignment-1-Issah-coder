@@ -108,13 +108,10 @@ def main():
         choice = int(input("Enter your choice (1-4): "))
         if choice == 1:
             add(todo)
-            time.sleep(3)
         elif choice == 2:
             view(todo)
-            time.sleep(3)
         elif choice == 3:
             remove(todo)
-            time.sleep(3)
         elif choice == 4:
             break
         else:

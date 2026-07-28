@@ -60,3 +60,7 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def read_user_matrix(rows,cols):
+    matrix=[]
+    
+
